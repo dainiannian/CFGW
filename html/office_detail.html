@@ -7,15 +7,24 @@
 	<link href="../css/office_detail.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
 	<script type="text/javascript" src="../js/service.js"></script>
-    <script type="text/javascript" src="../js/jquery.scrollto.js"></script>
+  <script type="text/javascript" src="../js/jquery.scrollto.js"></script>
     <script type="text/javascript">
         $(function(){
+            //照片遮罩
+            $('.person_picture').each(function (index){
+              console.log(556);
+                $(this).hover(function(){
+                    $(this).find('.mask').addClass('show');
+                },function(){
+                    $(this).find('.mask').removeClass('show');
+                });
+            });
             //点击导航菜单下面的黄色条移动
             $('.hw_item a').each(function (index){
-               $(this).click(function(){
-                  var left=index*180;
-                  $('.orange_item').css({'left':left});
-               });
+                $(this).click(function(){
+                    var left=index*180;
+                    $('.orange_item').css({'left':left});
+                });
             });
             //点击导航菜单滚动到相应的内容
             $('#hw_o_d').click(function (){
@@ -38,7 +47,9 @@
                 }else{
                    $('.o_d_model_02').removeClass('position');
                 }
-            })
+            });
+            //照片人物遮罩
+
         });
     </script>
 </head>
@@ -130,7 +141,7 @@
                     <div class="part_02">
                         <p class="title_01">服务介绍</p>
                         <p class="t_p1">
-                            嘉实财富北京大望路工作室拥有22名专业的投资顾问，每年管理资产超过十亿元。目前提供的服务包括私募股权投资，公募基金投资，基金专户投资，家族信托等资产管理业务。同时，嘉实服务于全社会的基础社会保障——————全国社保基金和地方社保基金；也为包括企业年金和商业保险在内的补充性社会保障提供直接或间接的服务；还为企业提供公募基金的理财服务，以及定制个性化的特定客户投资管理服务(含高端个人客户)，使他们的资产保值，增值；通过共同基金管理与投资，我们帮助更多的人群启动事业梦想，供养子女读书深造，享受恬静、富足的晚年生活。
+                            嘉实财富北京大望路工作室拥有22名专业的投资顾问，每年管理资产超过十亿元。目前提供的服务包括私募股权投资，公募基金投资，基金专户投资，家族信托等资产管理业务。同时，嘉实服务于全社会的基础社会保障———全国社保基金和地方社保基金；也为包括企业年金和商业保险在内的补充性社会保障提供直接或间接的服务；还为企业提供公募基金的理财服务，以及定制个性化的特定客户投资管理服务(含高端个人客户)，使他们的资产保值，增值；通过共同基金管理与投资，我们帮助更多的人群启动事业梦想，供养子女读书深造，享受恬静、富足的晚年生活。
                         </p>
                     </div>
                     <div class="part_03">
@@ -145,7 +156,12 @@
                     <div id="contact" class="w_1100_center">
                         <ul class="contact_item">
                             <li>
-                                <div class="person_picture"><img src="../images/renwu/a-1.jpg" alt="" /></div>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                        <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
                                 <div class="person_name">
                                     <span class="adder_name">北京</span>
                                     <span class="p_name">张国津</span>
@@ -158,7 +174,12 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="person_picture"><img src="../images/renwu/a-1.jpg" alt="" /></div>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                        <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
                                 <div class="person_name">
                                     <span class="adder_name">北京</span>
                                     <span class="p_name">张国津</span>
@@ -171,7 +192,12 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="person_picture"><img src="../images/renwu/a-1.jpg" alt="" /></div>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                        <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
                                 <div class="person_name">
                                     <span class="adder_name">北京</span>
                                     <span class="p_name">张国津</span>
@@ -184,7 +210,12 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="person_picture"><img src="../images/renwu/a-1.jpg" alt="" /></div>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                      <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
                                 <div class="person_name">
                                     <span class="adder_name">北京</span>
                                     <span class="p_name">张国津</span>
@@ -197,7 +228,12 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="person_picture"><img src="../images/renwu/a-1.jpg" alt="" /></div>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                      <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
                                 <div class="person_name">
                                     <span class="adder_name">北京</span>
                                     <span class="p_name">张国津</span>
@@ -210,7 +246,12 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="person_picture"><img src="../images/renwu/a-1.jpg" alt="" /></div>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                      <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
                                 <div class="person_name">
                                     <span class="adder_name">北京</span>
                                     <span class="p_name">张国津</span>
@@ -223,7 +264,12 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="person_picture"><img src="../images/renwu/a-1.jpg" alt="" /></div>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                      <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
                                 <div class="person_name">
                                     <span class="adder_name">北京</span>
                                     <span class="p_name">张国津</span>
@@ -236,7 +282,84 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="person_picture"><img src="../images/renwu/a-1.jpg" alt="" /></div>
+                                <div class="person_picture">
+                                    <img src="../images/renwu/a-1.jpg" alt="" />
+                                    <div class="mask">
+                                        <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                    </div>
+                                </div>
+                                <div class="person_name">
+                                    <span class="adder_name">北京</span>
+                                    <span class="p_name">张国津</span>
+                                </div>
+                                <div class="person_describe">
+                                    <span class="de_tit">PE/VC</span>
+                                    <span class="de_tit">私募股权</span>
+                                    <span id="title_three" class="de_tit">一级市场</span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                      <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
+                                <div class="person_name">
+                                    <span class="adder_name">北京</span>
+                                    <span class="p_name">张国津</span>
+                                </div>
+                                <div class="person_describe">
+                                    <span class="de_tit">PE/VC</span>
+                                    <span class="de_tit">私募股权</span>
+                                    <span id="title_three" class="de_tit">一级市场</span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                      <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
+                                <div class="person_name">
+                                    <span class="adder_name">北京</span>
+                                    <span class="p_name">张国津</span>
+                                </div>
+                                <div class="person_describe">
+                                    <span class="de_tit">PE/VC</span>
+                                    <span class="de_tit">私募股权</span>
+                                    <span id="title_three" class="de_tit">一级市场</span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="person_picture">
+                                  <img src="../images/renwu/a-1.jpg" alt="" />
+                                  <div class="mask">
+                                      <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                  </div>
+                                </div>
+                                <div class="person_name">
+                                    <span class="adder_name">北京</span>
+                                    <span class="p_name">张国津</span>
+                                </div>
+                                <div class="person_describe">
+                                    <span class="de_tit">PE/VC</span>
+                                    <span class="de_tit">私募股权</span>
+                                    <span id="title_three" class="de_tit">一级市场</span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="person_picture">
+                                    <img src="../images/renwu/a-1.jpg" alt="" />
+                                    <div class="mask">
+                                        <p style="padding:20px;">人物简介:张国津，毕业于bhjkkknknknkm lkkkmmmlkl</p>
+                                    </div>
+                                </div>
                                 <div class="person_name">
                                     <span class="adder_name">北京</span>
                                     <span class="p_name">张国津</span>

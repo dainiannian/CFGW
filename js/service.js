@@ -8,6 +8,19 @@ $(document).ready(function() {
 	 	};	
  	});
 	//修改宽度样式结束
+  
+  //照片遮罩
+  $('.person_picture').each(function (index){
+      $(this).hover(function(){
+          $(this).find('.mask').addClass('show');
+      },function(){
+          $(this).find('.mask').removeClass('show');
+      });
+  });
+
+
+
+  //上一页，下一页样式
     $('.b_page').each(function (index){
        $(this).click(function(){
        	   $('.b_page').removeClass('b_color');
