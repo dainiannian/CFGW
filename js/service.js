@@ -1,15 +1,5 @@
 
 $(document).ready(function() {
-	/*PERSON = [
-	{name:'张津', address:'北京',}
-	,{username:'何南', address:'上海',}
-	,{username:'何北', address:'北京',}
-	,{username:'何东', address:'上海',}
-	,{username:'何西', address:'深圳',}
-	,{username:'何南', address:'上海',}
-	,{username:'何南', address:'北京',}
-	,{username:'何南', address:'上海',}
-	] ;*/
     //修改宽度样式开始
 	$('.contact_item li').each(function (index){
 	 	var iHited = (index+1)%4 ; 
@@ -25,6 +15,7 @@ $(document).ready(function() {
            $('##next_above span').css({'margin-right':'32px'})
        });
     });
+    //点击所在城市、擅长领域子菜单背景色变化
     $('.c_name').each(function (index){ 
         var Children=$(this).children();
         Children.each(function(){
@@ -39,4 +30,8 @@ $(document).ready(function() {
     	$('.c_name[field='+$(this).parent().attr("field")+']').find('a').removeClass('c_all');
         $(this).addClass('c_all');
     });*/
+    //点击关注背景色变
+      $('#contact_me').click(function(){
+          $(this).css({'background':'#ebebeb','color':'#333'})
+      });
 });
