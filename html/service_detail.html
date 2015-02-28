@@ -6,6 +6,7 @@
 	<link href="../css/common.css" type="text/css" rel="stylesheet">
 	<link href="../css/service_detail.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
+	<script type="text/javascript" src="../js/jquery.scrollto.js"></script>
 	<script type="text/javascript">
 	   $(document).ready(function(){
            $('#contact_me').click(function(){
@@ -38,6 +39,25 @@
                      $('.pic_01').removeClass('bg_01');
                 });
            });
+           //链接滚动
+            $('#md_01').click(function (){
+                $.scrollTo('#ban_pic', 700);
+            });
+            $('#md_02').click(function (){
+                $.scrollTo('#area02', 700);
+            });
+            $('#md_03').click(function (){
+                $.scrollTo('#area03', 700);
+            });
+           //导航固定fixed
+           $(window).scroll(function(){
+                var fix=$(window).scrollTop();
+                if(fix >=210){
+                   $('#model_002 .m_002_l').addClass('fixed');
+                }else{
+                   $('#model_002 .m_002_l').removeClass('fixed');
+                }
+            });
 	   });
        
 	
@@ -88,21 +108,21 @@
     </div>
     <div id="model_002" class="w_1100_center">
     	<div class="m_002_l">
-    		<a href="#ban_pic">
+    		<a href="#" id="md_01">
 	    		<span class="or_div bgcolor">
 	    			<span class="icon_picture pic_01"></span>
 	    			<i class="lit_p appear"></i>
 	    			简介
 	    		</span>
     		</a>
-    		<a href="#area02">
+    		<a href="#" id="md_02">
     			<span class="or_div">
 	    			<span class="icon_picture pic_02"></span>
 	    			<i class="lit_p"></i>
 	    			观点
     		    </span>
     		</a>
-    		<a href="#area03">
+    		<a href="#" id="md_03">
     			<span class="or_div">
 	    			<span class="icon_picture pic_03"></span>
 	    			<i class="lit_p"></i>
@@ -143,7 +163,9 @@
 							<div class="ne_title">投资市场最新行情探讨<a href="javascript:void(0)"><span class="del">删除</span></a></div>
 							<p class="intro_detail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务能力和竞争力稳居龙头地位。中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平</p>
 							<div class="new_fr_bott">
-								<i class="bm_pic"></i>
+								<i class="bm_pic">
+									<img src="../images/renwu/b-1.jpg" alt="b-1.jpg" />
+								</i>
 								<span class="b_f">
 									祁世超 
 									<span class="gray_div f1">基金</span>
@@ -163,7 +185,9 @@
 							<div class="ne_title">投资市场最新行情探讨<a href="javascript:void(0)"><span class="del">删除</span></a></div>
 							<p class="intro_detail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务能力和竞争力稳居龙头地位。中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平</p>
 							<div class="new_fr_bott">
-								<i class="bm_pic"></i>
+								<i class="bm_pic">
+									<img src="../images/renwu/b-1.jpg" alt="b-1.jpg" />
+								</i>
 								<span class="b_f">
 									祁世超 
 									<span class="gray_div f1">基金</span>
@@ -183,7 +207,9 @@
 							<div class="ne_title">投资市场最新行情探讨<a href="javascript:void(0)"><span class="del">删除</span></a></div>
 							<p class="intro_detail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务能力和竞争力稳居龙头地位。中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平</p>
 							<div class="new_fr_bott">
-								<i class="bm_pic"></i>
+								<i class="bm_pic">
+									<img src="../images/renwu/b-1.jpg" alt="b-1.jpg" />
+								</i>
 								<span class="b_f">
 									祁世超 
 									<span class="gray_div f1">基金</span>

@@ -10,10 +10,11 @@
 .div_right a{color:#fff;}
 
 /*图片内容|文字*/
-#model_002{background: #e7e7e7;}
+#model_002{background: #e7e7e7;position:relative;}
 #model_002 .m_002_l{width:120px;float:left;}
+#model_002 .m_002_l.fixed{position:fixed;top:0;}
 #model_002 .m_002_l span{display:block;text-align:center;}
-#model_002 .m_002_r{float:left;width:920px;background:#fff;padding:0px 30px 120px 30px;}
+#model_002 .m_002_r{float:right;width:920px;background:#fff;padding:0px 30px 120px 30px;}
 
 #ban_pic{width:910px;overflow: hidden;margin-bottom:20px;}
 #model_002 .m_002_r p.nr_p{font-size: 14px;color:#6b6b6b;margin-bottom: 30px;}
@@ -34,24 +35,18 @@
 .b_f .f1{margin-left: 30px;}
 .b_f .f2{margin-left: 25px;}
 .b_f .gray_div{padding:5px 15px;background:#cccccc;color:#fff;}
-i.bm_pic{background:url(../images/icon.png) no-repeat -140px 0px;width:40px;height:33px;display:block;float:left;}
+i.bm_pic{overflow:hidden;width:40px;height:33px;display:block;float:left;}
 #next_page{text-align: right;font-size:14px;}
 #next_page a{color:#1a1a1a;}
 
 /*产品推荐*/
-/* #product_name{height:70px;background:#e7e7e7;margin: 15px 0px;} */
 #product_name{padding: 15px 0px;}
 #table_02 td{border:1px solid #e7e7e7;border-right:none;border-bottom: none;}
 #table_02 td a{color:#ff8328;text-decoration: underline;}
 #table_02{font-size: 12px;font-family: "微软雅黑";color:#7a7a7a;}
 #table_01{font-weight:600;color:#7a7a7a;}
 /*小图标*/
-.or_div{padding:10px 33px;color:#6b6b6b;position:relative;}
-/* .or_div:hover{background:#ff8328;color:#fff;}
-.or_div:hover .pic_01{background: url(../images/icon.png) no-repeat -182px 5px;}
-.or_div:hover .pic_02{background: url(../images/icon.png) no-repeat -95px -45px;}
-.or_div:hover .pic_03{background: url(../images/icon.png) no-repeat -180px -101px;}
-.or_div:hover .lit_p{display:block;} */
+.or_div{padding:10px 33px;color:#6b6b6b;position:relative;background:#e7e7e7;}
 .or_div .icon_picture{width:54px;height:56px;margin-bottom:3px;display:block;} 
 .or_div .pic_01{background: url(../images/icon.png) no-repeat -237px 2px;}
 .or_div .pic_02{background: url(../images/icon.png) no-repeat -151px -45px;}
