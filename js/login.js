@@ -16,18 +16,30 @@ function closeWindow02(){
 function closeWindow03(){
     $('#agreement_frame').css({'display':'none'});
 }
+function closeWindow04(){
+    $('#forget_password_frame').css({'display':'none'});
+    $('#agreement_frame').css({'display':'none'});
+}
+function closeWindow05(){
+    $('#reset_password').css({'display':'none'});
+}
 function agreement(){
     $('#agreement_frame').css({'display':'block'})
 }
+function forgetPassword(){
+    $('#layer_frame').css({'display':'none'});
+    $('#forget_password_frame').css({'display':'block'});
+}
+function reset_password(){
+    $('#forget_password_frame').css({'display':'none'});
+    $('#reset_password').css({'display':'block'});
 
+}
+function reset_pass(){
+    $('#reset_password').css({'display':'none'});
+}
 $(document).ready(function(){
-   //点击关闭窗口符号
-        /*$('.login_in').click(function(){
-            
-        });*/
-        /*$('.close_pic').click(function(){
-            $('#layer_frame').css({'display':'none'});
-        });*/
+   /* $("a,input,button").focus(function(){this.blur()});*/
         //点击登录
         $('#charge').click(function(){
             var Html=$('#password').val();
@@ -39,15 +51,6 @@ $(document).ready(function(){
 
         });
 
-    //点击注册
-        /*$('.register_js').click(function(){
-            
-        });
-        $('#register_frame .close_pic').click(function(){
-            $('#register_frame').css({'display':'none'});
-        });*/
-    //
-    
 });
 
             

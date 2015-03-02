@@ -19,7 +19,7 @@ input:focus{color:#000;}
 .register{font-family:"微软雅黑";} 
 #register{text-decoration: underline;}
 .common_c{width:250px;border:1px solid #ebebeb;height:40px;padding-left: 10px;line-height: 40px;background:#fff;}
-.common_c input{border:none;background:none;height:40px;width:200px;}
+.common_c input{border:none;background:none;height:40px;width:200px;line-height:36px;}
 .four_div p{height:20px;padding-top:5px;color:red;display:block;}
 .new_div{margin-bottom: 25px;}
 .five_div{height:30px;line-height:30px;margin-bottom:20px;}
@@ -28,19 +28,30 @@ input:focus{color:#000;}
 .five_div .r_f{float:right;width:80px;float:right;}
 .five_div .r_f input{;color:#fff;font-family:"微软雅黑";}
 .six_div{margin-bottom:40px;margin-top:15px;}
-.six_div input:hover{background:#fc8f4f;}
 .six_div input{border:none;background:none;font-size:18px;font-family:"微软雅黑";width:260px;height:40px;background:#ff8239;color:#fff;}
-
+#charge{cursor:pointer;}
 
 /* 忘记密码 忘记密码 */
-#forget_password_frame{background:#f9f9f9;}
+#forget_password_frame{background:#f9f9f9;display:none;}
 .forget_password_p{width:260px;margin:0 auto;}
-.forget_password_p p.f_b{font-size: 20px;}
+.forget_password_p p.f_b{font-size: 20px;margin-bottom: 20px;}
 .checked_number{}
 #checked_number{width:150px;}
-.get_number{border:none;background:none;background:#ff8239;width:88px;color:#fff;}
+.get_number{cursor:pointer;border:none;background:none;background:#ff8239;width:88px;color:#fff;font-family:"微软雅黑";}
 .forget_password_p span{display:block;float:left;}
-.forget_password_p .right_input{margin-left:10px;}
+.forget_password_p .right_input_01{margin-left:10px;*margin-left:5px;}
+.right_input_02{margin-left:10px;width:76px;text-align:center;color:#6c6c6c;font-size:24px;font-weight: 700;}
+#next_stage{cursor:pointer;width:260px;font-family:"微软雅黑";color:#fff;background:#ff8239;}
+#reset_main{width:260px;margin:0 auto;}
+
+#reset_password{background:#f9f9f9;display:none;}
+#new_password{margin-bottom: 25px;}
+#sure_password{margin-bottom: 25px;}
+#reset_pass{margin-bottom: 40px;width:262px;color:#fff;background: #ff8239;font-family:"微软雅黑";font-size:18px;}
+.fore{margin-bottom: 25px;}
+.p_style{display:block;width:40px;float:left;}
+
+.res_p{margin-bottom:25px;}
 /*登录样式结束*/
 /*服务协议*/
 #agreement_frame{background:#f9f9f9;position:absolute;top:0;left:0; width:100%;display:none;}
