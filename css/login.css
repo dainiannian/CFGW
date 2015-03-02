@@ -35,7 +35,6 @@ input:focus{color:#000;}
 #forget_password_frame{background:#f9f9f9;display:none;}
 .forget_password_p{width:260px;margin:0 auto;}
 .forget_password_p p.f_b{font-size: 20px;margin-bottom: 20px;}
-.checked_number{}
 #checked_number{width:150px;}
 .get_number{cursor:pointer;border:none;background:none;background:#ff8239;width:88px;color:#fff;font-family:"微软雅黑";}
 .forget_password_p span{display:block;float:left;}
