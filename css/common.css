@@ -7,7 +7,20 @@ body{font-family:arial;background:#ebebeb;}
 img{border:none;}
 .clear{clear:both;}
 a{text-decoration: none;}
+border{border:1px solid black;}
 
+.clearfix:after{
+  content: "020"; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;  
+  }
+
+.clearfix {
+  /* 触发 hasLayout */ 
+  zoom: 1; 
+  }
 
 .f_left{float:left;}
 .f_right{float:right;}
