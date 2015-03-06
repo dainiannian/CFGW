@@ -10,6 +10,15 @@
 .sv_title .c_div{position:absolute;left:0;bottom:0;width:78px;height:3px;background:#ff8238;}
 .sv_title .complete{position:absolute;right:0;bottom:5px;padding:5px 10px;border:1px solid #ff8238;}
 .complete a{color:#ff8238;font-size:12px;}
+
+
+.phone_number{margin-right:30px;}
+.self_i{margin-bottom:30px;font-size:12px;color:#6c6c6c;}
+.r_name{font-size:30px;font-weight: bold;color:#6c6c6c;}
+.r_icon{padding:8px 15px;width:28px;height:28px;background:url(../images/icon.png) no-repeat -76px -404px;}
+.si_r{margin-top:20px;}
+.si_r span{padding:5px 10px;color:#fff;background:#ff8238;}
+
 /*图片内容|文字*/
 #model_002{background: #e7e7e7;position:relative;}
 #model_002 .m_002_l{width:120px;float:left;}
@@ -17,33 +26,41 @@
 #model_002 .m_002_l span{display:block;text-align:center;}
 #model_002 .m_002_r{float:right;width:880px;background:#fff;padding:0px 50px 120px 50px;}
 
-#ban_pic{width:880px;overflow: hidden;margin-bottom:20px;}
+
 #model_002 .m_002_r p.nr_p{font-size: 14px;color:#6b6b6b;margin-bottom: 30px;}
 .color_t{color:#ff8328;margin-bottom: 20px;display:block;}
 /*最近观点*/
 #new_idea{padding-bottom:20px;padding-top:30px;border-bottom: 1px solid #ccc;position:relative;}
 #new_idea h2{color:#ff8328;}
 #new_idea .n_div{position:absolute;bottom:0;width:97px;height:3px;background:#ff8328;}
+.add_re{display:block;color:#ff8328;position:absolute;right:0;bottom:10px;}
+.b_border{border-bottom:1px solid #ccc;}
+
 
 #new_idea_list{margin-top: 15px;}
 #new_idea_list .new_item{margin-bottom: 40px;}
 .new_fl{width:172px;}
-.new_fr{padding-left:10px;width:734px;}
+.new_fr{padding-left:10px;width:680px;}
 .new_fr .ne_title{font-size:20px;color:#333333;position:relative;}
 .new_fr .ne_title .del{position:absolute;right:0;top:0px;color:#ff0000;font-size: 12px;}
-.intro_detail{font-size:14px;color:#6b6b6b; line-height: 22px;height:84px;overflow:hidden;}
+.intro_detail{text-indent:2em;font-size:14px;color:#6b6b6b; line-height: 22px;height:84px;overflow:hidden;}
 .b_f{display:block;float:left;line-height:35px;color:#cccccc;}
 .b_f .f1{margin-left: 30px;}
 .b_f .f2{margin-left: 25px;}
 .b_f .gray_div{padding:5px 15px;background:#cccccc;color:#fff;}
+.b_r{float:right;font-size: 12px;color:#6c6c6c;margin-top:10px;}
+.pi_date{margin-right:10px;}
+
 i.bm_pic{overflow:hidden;width:40px;height:33px;display:block;float:left;}
 #next_page{text-align: right;font-size:14px;}
 #next_page a{color:#1a1a1a;}
 
 /*产品推荐*/
+
 #product_name{padding: 15px 0px;}
-#table_02 td{border:1px solid #e7e7e7;border-right:none;border-bottom: none;}
-#table_02 td a{color:#ff8328;text-decoration: underline;}
+#table_02 td{border:1px solid #e7e7e7;border-right:none;border-bottom:1px solid #e7e7e7;border-top:none;}
+#table_02 td a{text-decoration: underline;}
+#table_02 td a.del{color:#ff8328;text-decoration:none;}
 #table_02{font-size: 12px;font-family: "微软雅黑";color:#7a7a7a;}
 #table_01{font-weight:600;color:#7a7a7a;}
 /*小图标*/
@@ -59,3 +76,21 @@ i.bm_pic{overflow:hidden;width:40px;height:33px;display:block;float:left;}
 .or_div .pic_02.bg_02{background: url(../images/icon.png) no-repeat -95px -45px;}
 .or_div .pic_03.bg_03{background: url(../images/icon.png) no-repeat -180px -101px;}
 
+/*添加观点，输入框输入部分*/
+.typing{height:200px;width:880px;border:1px solid #ccc;margin-top:30px;}
+.typing_sure{padding:10px 0px 20px;}
+#type_choose{width:60px;height:35px;}
+.add_pic{margin-left:10px;display:block;width:35px;height:33px;text-align:center;line-height:33px;color:#6c6c6c;border:1px solid #ccc;}
+.vw_right input{background:none;border:none;background:#ff8238;color:#fff;width:105px;height:40px;font-size:14px;}
+
+/*页脚上下翻页*/
+#next_above{margin-top: 40px;padding-top:45px;padding-bottom:30px;width:452px;margin:0 auto;}
+#next_above span{margin-right:30px;font-family:arial;font-size: 12px;}
+#next_above a{color:#666666;}
+.b_page{padding:5px;cursor:pointer;}
+.b_page.b_color{border:1px solid #ccc;color:#f59853;}
+
+/*banner背面*/
+#person_pic{margin-bottom:20px;position:relative;min-height:110px;max-height:500px;overflow: hidden;background:url(../images/ban_bg.png) no-repeat 50% 50%;}
+/* #person_pic img{position:absolute;z-index:1;} */
+.b_g_link{display:block;position:absolute;z-index:0;width:134px;height:30px;top:50%;left:50%;margin-top:-30px;margin-left:-68px;}

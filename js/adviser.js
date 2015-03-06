@@ -13,8 +13,11 @@ $(document).ready(function() {
   $('.person_picture').each(function (index){
       $(this).hover(function(){
           $(this).find('.mask').addClass('show');
+          $(this).find('.triangle').addClass('appear');
+
       },function(){
           $(this).find('.mask').removeClass('show');
+          $(this).find('.triangle').removeClass('appear');
       });
   });
 
