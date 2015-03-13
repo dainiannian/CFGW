@@ -1,13 +1,15 @@
 /*关注|预约*/
 #model_001{width:100%;background:#232428;height:100px;}
 #model_001 .m_content{position:relative;}
-.intro_pic{height:100px;width:84px;margin-right:10px;float:left;margin-left:90px;background:url(../images/icon.png) no-repeat 0px 0px;}
+.intro_pic{height:80px;width:80px;border-radius: 100px;margin-top:10px;overflow:hidden;margin-right:10px;float:left;margin-left:90px;}
 .intro_detail_model001{color:#ccccad;padding-top:20px;}
 .intro_detail h3{margin-bottom:5px;}
 .intro_detail_model001 p{font-size: 12px;margin-bottom: 5px;}
 .div_right{position:absolute;right:0;top:50%;}
-.div_right span{padding:7px 35px;*padding:7px 35px;background:#ff8328;color:#fff;margin-left:10px;}
+.div_right span{padding:7px 35px;*padding:7px 35px;background:#ff8328;color:#fff;}
 .div_right a{color:#fff;}
+
+
 
 /*图片内容|文字*/
 #model_002{background: #e7e7e7;position:relative;}
@@ -55,6 +57,6 @@ i.bm_pic{overflow:hidden;width:40px;height:33px;display:block;float:left;}
 .or_div.bgcolor{background:#ff8328;color:#fff;}
 .or_div .lit_p.appear{display:block;}
 .or_div .pic_01.bg_01{background: url(../images/icon.png) no-repeat -182px 5px;} 
-.or_div .pic_02.bg_02{background: url(../images/icon.png) no-repeat -95px -45px;}
+.or_div .pic_02.bg_02{background: url(../images/icon.png) no-repeat -96px -43px;}
 .or_div .pic_03.bg_03{background: url(../images/icon.png) no-repeat -180px -101px;}
 

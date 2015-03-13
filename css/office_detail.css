@@ -24,7 +24,7 @@
 /**/
 /*主体内容 照片*/
 .contact_item {padding-top:10px;padding-left: 32px;}
-.contact_item li{float:left;margin-right: 40px;width:229px;margin-bottom: 30px;}
+.contact_item li{float:left;margin-right: 40px;width:227px;margin-bottom: 30px;}
 .contact_item li .person_picture{position:relative;height:160px;overflow:hidden;box-shadow: 3px 3px 5px #999;}
 .person_name{padding:5px 0px;}
 .person_name .p_name{width:60px;font-family:arial;}

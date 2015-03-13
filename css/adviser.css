@@ -13,7 +13,7 @@ p.text_02 .o_color{position:absolute;bottom:0;height:3px;width:80px;background:#
 .c_title{margin-right:50px;} 
 .name_search{border:1px solid #ccc;position:relative;margin-right:15px;}
 .s_k input{width:170px;height:30px;border:none;}
-.s_pic{position:absolute;right:0;top:0;width:30px;height:30px;display:block;background: url(../images/icon.jpg) no-repeat;}
+.s_pic{cursor:pointer;position:absolute;right:0;top:0;width:30px;height:30px;display:block;background: url(../images/icon.jpg) no-repeat;}
 .con_clear{line-height: 30px;}
 .c_name a{padding:0px 7px;color:#666;display:inline-block;margin-right: 30px;}
 .c_name a.c_all{background:#ff8239;color:#fff;}
@@ -23,11 +23,11 @@ p.text_02 .o_color{position:absolute;bottom:0;height:3px;width:80px;background:#
 .contact_item li{float:left;width:229px;margin-bottom: 30px;padding:0 23px;}
 .contact_item li:hover .mask{display:block;}
 .contact_item li:hover .triangle{display:block;}
-.contact_item li .person_picture{position:relative;height:160px;box-shadow: 3px 3px 5px #999;}
+.contact_item li .person_picture{position:relative;height:160px;}
 .person_name{padding:5px 0px;}
 .person_name .p_name{width:60px;font-family:arial;}
 .person_name .adder_name{font-size:12px;float:right;}
-.person_describe{max-height:60px;overflow:hidden;}
+.person_describe{height:30px;overflow:hidden;width:229px;}
 .person_describe span.de_tit{margin-right:7px;margin-bottom:5px;padding:5px 10px;font-size:12px;background:#f2f2f2;display:block;float:left;}
 .p_p_pic{display:block;width:229px;height:160px;overflow:hidden;}
 /*照片遮罩*/

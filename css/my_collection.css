@@ -21,7 +21,7 @@
 
 /*小图标*/
 .or_div{padding:10px 33px;color:#6b6b6b;position:relative;background:#e7e7e7;}
-.or_div .icon_picture{width:54px;height:56px;margin-bottom:3px;display:block;} 
+.or_div .icon_picture{width:54px;height:56px;overflow:hidden;margin-bottom:3px;display:block;} 
 .or_div .pic_01{background: url(../images/icon.png) no-repeat -249px -230px;}
 .or_div .pic_02{background: url(../images/icon.png) no-repeat -249px -286px;}
 .or_div .pic_03{background: url(../images/icon.png) no-repeat -151px -45px;}

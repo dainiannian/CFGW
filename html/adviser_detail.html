@@ -8,61 +8,15 @@
 	<script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
 	<script type="text/javascript" src="../js/jquery.scrollto.js"></script>
     <script type="text/javascript" src="../js/login.js"></script>
-	<script type="text/javascript">
-	   $(document).ready(function(){
-           $('#contact_me').click(function(){
-                $('#contact_me span').css({'background':'#ebebeb','color':'#333'})
-           });
-           $('.or_div').each(function (index){
-                $(this).click(function(){
-                    var mun=$('.or_div').eq(index);
-                    var litter=$('.lit_p').eq(index);
-                    var bg=$('.icon_picture').eq(index);
-                    $('.or_div').removeClass('bgcolor');
-                    mun.addClass('bgcolor');
-                    $('.lit_p').removeClass('appear');
-                    litter.addClass('appear');
-                });
-                $('.pic_01').addClass('bg_01');
-                $('.or_div').eq(0).click(function(){
-                     $('.pic_01').addClass('bg_01');
-                     $('.pic_02').removeClass('bg_02');
-                     $('.pic_03').removeClass('bg_03');
-                });
-                $('.or_div').eq(1).click(function(){
-                     $('.pic_02').addClass('bg_02');
-                     $('.pic_01').removeClass('bg_01');
-                     $('.pic_03').removeClass('bg_03');
-                });
-                $('.or_div').eq(2).click(function(){
-                     $('.pic_03').addClass('bg_03');
-                     $('.pic_02').removeClass('bg_02');
-                     $('.pic_01').removeClass('bg_01');
-                });
-           });
-           //链接滚动
-            $('#md_01').click(function (){
-                $.scrollTo('#ban_pic', 700);
-            });
-            $('#md_02').click(function (){
-                $.scrollTo('#area02', 700);
-            });
-            $('#md_03').click(function (){
-                $.scrollTo('#area03', 700);
-            });
-           //导航固定fixed
-           $(window).scroll(function(){
-                var fix=$(window).scrollTop();
-                if(fix >=210){
-                   $('#model_002 .m_002_l').addClass('fixed');
-                }else{
-                   $('#model_002 .m_002_l').removeClass('fixed');
-                }
-            });
-	   });
-       
-	
+    <script type="text/javascript" src="../js/adviser_detail.js"></script>
+    <script type="text/javascript" src="http://player.youku.com/jsapi">
+					player = new YKU.Player('youkuplayer',{
+					styleid: '0',
+					client_id: '8fa0c4541085889f',
+					vid: 'XOTA4NTM4OTY4'
+				    });
 	</script>
+
 </head>
 <body>
 	<!-- 导航开始 -->
@@ -95,7 +49,9 @@
     <div id="model_001">
     	<div class="m_content w_1100_center">
     		<div class="div_left">
-    			<div class="intro_pic"></div>
+    			<div class="intro_pic">
+    				<img src="../images/renwu/ren-2.jpg" alt="" />
+    			</div>
     			<div class="intro_detail_model001">
     				<h3>吴秀波<i></i></h2>
     				<p>北京财富工作室&nbsp;|&nbsp; Tel:1356789956&nbsp;&nbsp;微信：WLS323233</p>
@@ -135,7 +91,8 @@
 
     	<div class="m_002_r">
     		<div id="ban_pic">
-    			<img src="../images/detail_01.png" alt="" />
+    			<!-- <img src="../images/detail_01.png" alt="" /> -->
+    			<div id="youkuplayer" style="width:910px;height:500px"></div>
     		</div>
     		<div class="area01">
     			<p class="nr_p c_p1">
