@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>认证工作室</title>
+  <title>成员管理</title>
   <link href="../css/common.css" type="text/css" rel="stylesheet">
   <link href="../css/my_office.css" type="text/css" rel="stylesheet">
-  <link href="../css/authenticate.css" type="text/css" rel="stylesheet">
+  <link href="../css/personal_settings.css" type="text/css" rel="stylesheet">
   <script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
   <script type="text/javascript" src="../js/login.js"></script>
   <script type="text/javascript">
@@ -61,8 +61,8 @@
           <div class="intro_detail_model001 f_left">
               <a href="javascript:void(0);">个人主页</a>
               <a href="javascript:void(0);">关注收藏</a>
-              <a href="javascript:void(0);" class="wd">我的工作室</a>
-              <a href="javascript:void(0);">个人设置</a>
+              <a href="javascript:void(0);">我的工作室</a>
+              <a href="javascript:void(0);" class="wd">个人设置</a>
           </div>
         </div>
       </div>
@@ -71,83 +71,180 @@
         <div class="m_002_l">
             <a href="#" id="md_04">
                 <span class="or_div bgcolor">
-                  <span class="icon_picture pic001 w_color_01"></span>
+                  <span class="icon_picture p_01 bg_01"></span>
                   <i class="lit_p appear"></i>
-                  基本信息
+                  个人资料
                 </span>
             </a>
             <a href="#" id="md_01">
                 <span class="or_div">
-                    <span class="icon_picture pic002"></span>
+                    <span class="icon_picture p_02"></span>
                     <i class="lit_p"></i>
-                    创建工作室
+                    密码
                 </span>
             </a>
             <a href="#" id="md_02">
                 <span class="or_div">
-                    <span class="icon_picture pic003"></span>
+                    <span class="icon_picture p_03"></span>
                     <i class="lit_p"></i>
-                    装修工作室
-                </span>
-            </a>
-            <a href="#" id="md_03">
-              <span class="or_div">
-                <span class="icon_picture pic004"></span>
-                <i class="lit_p"></i>
-                顾问管理
+                    绑定
                 </span>
             </a>
         </div>
         <div class="m_002_r">
           <div id="content_frame">
-              <h1 class="do_title">嘉实基金北京金地工作室
-                  <span class="un_pic"></span>
-                  <a href="javascript:void(0);" class="un_txt">申请认证</a>
-              </h1>
-              <div class="w_a">
-                  <p class="w_a_title">
-                      工作室认证
-                  </p>
+              <div class="personal_title">
+                 <p class="p_label">个人资料</p>
               </div>
-              <form action="">
-                  <div class="a_containter clearfix">
-                      <div class="a_left f_left">
-                          <div class="item clearfix">
-                              <div class="a_txt f_left">企业工商营业执照</div>
-                              <div class="a_detail f_left">
-                                  <a href="javascript:void(0);" class="a_uploading">
-                                      上传并预览
-                                  </a>
-                              </div>
-                          </div>
-                          <div class="item clearfix">
-                              <div class="a_txt f_left">&nbsp;</div>
-                              <div class="a_detail f_left text">
-                                  必须在有效期范围内。原件，扫描件或复印件加盖企业公章的扫描件支持JPG、GIF、PNG样式图片，不超过5M，文字清晰。
-                              </div>
-                          </div>
-                          <div class="item clearfix">
-                              <div class="a_txt f_left">企业名称</div>
-                              <div class="a_detail f_left">
-                                  <input type="text" class="input_txt"/>
-                              </div>
-                          </div>
-                          <div class="item clearfix">
-                              <div class="a_txt f_left">工商执照注册号</div>
-                              <div class="a_detail f_left">
-                                  <input type="text" class="input_txt"/>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="a_right f_right">
-                          <p class="example">示例：</p>
-                          <img src="../images/renwu/app_03.png" alt="" />
-                      </div>
+              <div class="p_data">
+                  <div class="up_btn">
+                      上传头像：<a href="javascript:void(0);" class="up_link">上传头像</a>
                   </div>
-                  <div class="apply_btn">
-                      <input type="button" value="申请认证" class="apply_sure"/>
+                  <div class="pic_text">
+                      支持JPG、GIF、PNG格式图片，不超过5M,下方为头像预览效果
                   </div>
-              </form>
+                  <div class="pic_preview clearfix">
+                      <span class="p_l f_left">头像预览:</span>
+                      <span class="p_r f_left">
+                          <img src="" alt="" />
+                      </span>
+                  </div>
+                  <div class="per_content">
+                     <form action="">
+                         <div class="p_div clearfix">
+                             <span class="ni_name f_left">昵称：</span>
+                             <span class="ni_text f_left">
+                                 <input type="text" class="common_input"/>
+                             </span>
+                         </div>
+                         <div class="p_div clearfix">
+                             <span class="ni_name f_left">居住地：</span>
+                             <span class="ni_text f_left">
+                                 <select name="" id="">
+                                     <option value="">北京</option>
+                                     <option value="">上海</option>
+                                     <option value="">广州</option>
+                                     <option value="">深圳</option>
+                                 </select>
+                                 <select name="" id="">
+                                     <option value="">北京</option>
+                                     <option value="">上海</option>
+                                     <option value="">广州</option>
+                                     <option value="">深圳</option>
+                                 </select>
+                             </span>
+                         </div>
+                         <div class="p_div clearfix">
+                             <span class="ni_name f_left">性别：</span>
+                             <span class="ni_text f_left">
+                                 <select name="" id="">
+                                     <option value="">男</option>
+                                     <option value="">女</option>
+                                 </select>
+                             </span>
+                         </div>
+                         <div class="p_div clearfix">
+                             <span class="ni_name f_left">一句话简介：</span>
+                             <span class="ni_text f_left sw">
+                                 <textarea type="text" class="short_words" maxlength="150"/></textarea>
+                                 <p class="bottom_txt" maxlength="100">150字</p>
+                             </span>
+                         </div>
+                         <div class="p_div btns">
+                             <input type="button" class="sure_btn" value="确定"/>
+                         </div>
+                     </form>
+                  </div>
+              </div>
+              <div class="personal_title">
+                 <p class="p_label">补充资料</p>
+              </div>
+              <div class="add_data">
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          真实姓名：
+                      </span>
+                      <span class="a_r f_left">
+                          <input type="text" class="real_name"/>
+                      </span>
+                  </div>
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          主页封面：
+                      </span>
+                      <span class="a_r f_left">
+                          <input type="button" value="上传" class="up_b"/>
+                          <p class="title">
+                              提示：上传封面将展示在个人首页中，建议大小800*500
+                          </p>
+                      </span>
+                  </div>
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          预览：
+                      </span>
+                      <span class="a_r f_left picture">
+                          <div class="picture_preview"></div>
+                      </span>
+                  </div>
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          视频地址：
+                      </span>
+                      <span class="a_r f_left picture">
+                           <input type="text" class="real_name"/>
+                           <p class="title">
+                              提示：用户需要在优酷上上传视频，并获取分享视频的HTML格式代码，复制到文本框内。
+                          </p>
+                      </span>
+                  </div>
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          年龄：
+                      </span>
+                      <span class="a_r f_left picture">
+                           <input type="text" class="real_name"/>
+                      </span>
+                  </div>
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          个人简介：
+                      </span>
+                      <span class="a_r f_left picture">
+                           <textarea name="" id="" class="text_area"></textarea>
+                      </span>
+                  </div>
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          工作经历：
+                      </span>
+                      <span class="a_r f_left picture">
+                           <textarea name="" id="" class="text_area"></textarea>
+                      </span>
+                  </div>
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          教育背景：
+                      </span>
+                      <span class="a_r f_left picture">
+                           <textarea name="" id="" class="text_area"></textarea>
+                      </span>
+                  </div>
+                  <div class="a_div clearfix">
+                      <span class="a_l f_left">
+                          添加标签：
+                      </span>
+                      <span class="a_r f_left picture">
+                           <select name="" id="">
+                               <option value="">医药</option>
+                           </select>
+                           <a href="javascript:void(0);" class="add_label">+</a>
+                      </span>
+                  </div>
+                  <div class="bottom_btn">
+                      <input type="button" value="确定" class="s_btn"/>
+                  </div>
+              </div>
           </div>
         </div> 
     </div>

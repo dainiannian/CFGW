@@ -3,7 +3,7 @@
 #model_002 .m_002_l{width:120px;float:left;}
 #model_002 .m_002_l.fixed{position:fixed;top:0;}
 #model_002 .m_002_l span{display:block;text-align:center;}
-#model_002 .m_002_r{float:right;width:880px;background:#fff;padding:0px 50px 120px 50px;}
+#model_002 .m_002_r{float:right;width:880px;background:#fff;padding:0px 50px 100px 50px;}
 
 /*小图标*/
 .or_div{padding:10px 33px;color:#6b6b6b;position:relative;background:#e7e7e7;}
@@ -32,7 +32,7 @@
 
 .pic001.w_color_01{background: url(../images/icon.png) no-repeat -171px -413px}
 .pic002.w_color_02{background: url(../images/icon.png) no-repeat -178px -229px;}
-.pic003.w_color_03{background: url(../images/icon.png) no-repeat -167px -355px;}
-.pic004.w_color_04{background: url(../images/icon.png) no-repeat -245px -413px;}
+.pic003.w_color_03{background: url(../images/icon.png) no-repeat -175px -293px;}
+.pic004.w_color_04{background: url(../images/icon.png) no-repeat -169px -355px;}
 
-#content_frame{margin-left: 30px;}
+#content_frame{margin:0px 30px;}

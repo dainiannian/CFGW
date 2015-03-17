@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>认证工作室</title>
+  <title>成员管理</title>
   <link href="../css/common.css" type="text/css" rel="stylesheet">
   <link href="../css/my_office.css" type="text/css" rel="stylesheet">
-  <link href="../css/authenticate.css" type="text/css" rel="stylesheet">
+  <link href="../css/member_manage.css" type="text/css" rel="stylesheet">
   <script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
   <script type="text/javascript" src="../js/login.js"></script>
   <script type="text/javascript">
@@ -70,9 +70,9 @@
     <div id="model_002" class="w_1100_center clearfix">
         <div class="m_002_l">
             <a href="#" id="md_04">
-                <span class="or_div bgcolor">
-                  <span class="icon_picture pic001 w_color_01"></span>
-                  <i class="lit_p appear"></i>
+                <span class="or_div">
+                  <span class="icon_picture pic001"></span>
+                  <i class="lit_p"></i>
                   基本信息
                 </span>
             </a>
@@ -91,9 +91,9 @@
                 </span>
             </a>
             <a href="#" id="md_03">
-              <span class="or_div">
-                <span class="icon_picture pic004"></span>
-                <i class="lit_p"></i>
+              <span class="or_div bgcolor">
+                <span class="icon_picture pic004 w_color_04"></span>
+                <i class="lit_p appear"></i>
                 顾问管理
                 </span>
             </a>
@@ -102,52 +102,246 @@
           <div id="content_frame">
               <h1 class="do_title">嘉实基金北京金地工作室
                   <span class="un_pic"></span>
-                  <a href="javascript:void(0);" class="un_txt">申请认证</a>
+                  <a href="javascript:void(0);" class="un_txt">未认证,立即申请</a>
               </h1>
-              <div class="w_a">
-                  <p class="w_a_title">
-                      工作室认证
-                  </p>
+              <div class="b_label" id="b_label">
+                 <p class="b_txt">成员信息</p>
               </div>
-              <form action="">
-                  <div class="a_containter clearfix">
-                      <div class="a_left f_left">
-                          <div class="item clearfix">
-                              <div class="a_txt f_left">企业工商营业执照</div>
-                              <div class="a_detail f_left">
-                                  <a href="javascript:void(0);" class="a_uploading">
-                                      上传并预览
+              <div class="table_content">
+                  <a href="javascript:void(0);" class="make_sure">修改</a>
+                  <table cellpadding="0" cellspacing="0" class="table_01">
+                      <tr>
+                          <td width='120' align="center">&nbsp;</td>
+                          <td width='160' align="center">真实姓名</td>
+                          <td width='160' align="center">昵称</td>
+                          <td width='160' align="center">工作室身份</td>
+                          <td width='160' align="center">&nbsp;</td>
+                      </tr>
+                  </table>
+                  <table cellpadding="0" cellspacing="0" class="table_02">
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
                                   </a>
                               </div>
-                          </div>
-                          <div class="item clearfix">
-                              <div class="a_txt f_left">&nbsp;</div>
-                              <div class="a_detail f_left text">
-                                  必须在有效期范围内。原件，扫描件或复印件加盖企业公章的扫描件支持JPG、GIF、PNG样式图片，不超过5M，文字清晰。
+                          </td>
+                          <td width='150' align="center">
+                              <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='150' align="center">昵称xx</td>
+                          <td width='150' align="center">顾问</td>
+                          <td width='150' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
                               </div>
-                          </div>
-                          <div class="item clearfix">
-                              <div class="a_txt f_left">企业名称</div>
-                              <div class="a_detail f_left">
-                                  <input type="text" class="input_txt"/>
+                          </td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='160' align="center">昵称xx</td>
+                          <td width='160' align="center">顾问</td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
                               </div>
+                          </td>
+                          <td width='160' align="center">
+                               <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='160' align="center">昵称xx</td>
+                          <td width='160' align="center">顾问</td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
+                              </div>
+                          </td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='160' align="center">昵称xx</td>
+                          <td width='160' align="center">顾问</td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
+                              </div>
+                          </td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='160' align="center">昵称xx</td>
+                          <td width='160' align="center">顾问</td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
+                              </div>
+                          </td>
+                          <td width='150' align="center">
+                              <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='150' align="center">昵称xx</td>
+                          <td width='150' align="center">顾问</td>
+                          <td width='150' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
+                              </div>
+                          </td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='160' align="center">昵称xx</td>
+                          <td width='160' align="center">顾问</td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
+                              </div>
+                          </td>
+                          <td width='160' align="center">
+                               <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='160' align="center">昵称xx</td>
+                          <td width='160' align="center">顾问</td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
+                              </div>
+                          </td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='160' align="center">昵称xx</td>
+                          <td width='160' align="center">顾问</td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width='120' align="center">
+                              <div class="mem_pic">
+                                  <a href="javascript:void(0);">
+                                      <img src="../images/renwu/person_01.jpg" alt="" />
+                                  </a>
+                              </div>
+                          </td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="a_name">张津则</a>
+                          </td>
+                          <td width='160' align="center">昵称xx</td>
+                          <td width='160' align="center">顾问</td>
+                          <td width='160' align="center">
+                              <a href="javascript:void(0);" class="delete">删除成员</a>
+                          </td>
+                      </tr>
+                  </table>
+                  <div class="page clearfix">
+                      <div class="list">
+                          <a href="javascript:void(0);" class="border border_color">1</a>
+                          <a href="javascript:void(0);" class="border">2</a>
+                          <a href="javascript:void(0);" class="border">3</a>
+                          <a href="javascript:void(0);" class="border">4</a>
+                          <a href="javascript:void(0);" class="border">5</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="add_member">
+                  <div class="b_label" id="b_label">
+                      <p class="b_txt">添加成员</p>
+                  </div>
+                  <div class="add_content clearfix">
+                      <div class="add_left f_left">
+                          <div class="search_div">
+                              <input type="text" class="search" value="昵称/姓名" onfocus="if(this.value=='昵称/姓名'){this.value='';this.style.color='#6c6c6c'}" onblur="if(this.value==''){this.value='昵称/姓名';this.style.color='#ccc'}"/>
+                              <a href="javascript:void(0);"></a>
                           </div>
-                          <div class="item clearfix">
-                              <div class="a_txt f_left">工商执照注册号</div>
-                              <div class="a_detail f_left">
-                                  <input type="text" class="input_txt"/>
+                          <p class="s_label">搜索结果</p>
+                          <div class="search_result">
+                              <div class="per_pic">
+                                  <img src="../images/renwu/ren-1.jpg" alt="" />
+                              </div>
+                              <span class="per_name">张津则</span>/
+                              <span class="nickname">昵称</span> 
+                              <a href="javascript:void(0);" class="add_btn">添加</a> 
+                          </div>
+                      </div>
+                      <div class="add_right f_left">
+                          <div class="set_id">
+                              <p>请设置该成员的工作室身份</p>
+                              <div class="set_div">
+                                  <p class="list_set">
+                                      <input type="radio" name="check" checked="checked"/>顾问
+                                  </p>
+                                  <p class="list_set">
+                                      <input type="radio" name="check"/>管理员
+                                  </p>
+                                  <p class="list_set">
+                                      <input type="radio" name="check"/>既是管理员,也是顾问
+                                  </p>
+                                  <p class="list_btn">
+                                      <input type="button" value="保存" class="save_btn"/>
+                                  </p>
+                                  
                               </div>
                           </div>
                       </div>
-                      <div class="a_right f_right">
-                          <p class="example">示例：</p>
-                          <img src="../images/renwu/app_03.png" alt="" />
-                      </div>
                   </div>
-                  <div class="apply_btn">
-                      <input type="button" value="申请认证" class="apply_sure"/>
-                  </div>
-              </form>
+              </div>
           </div>
         </div> 
     </div>
