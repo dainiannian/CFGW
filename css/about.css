@@ -20,6 +20,6 @@
 .fore{margin-bottom: 30px;}
 
 
-.text_number{margin-top:20px;height:30px;width:180px;padding-left: 5px;}
+.text_number{border:1px solid #ccc;margin-top:20px;height:30px;width:180px;padding-left: 5px;}
 .sure_button{text-align:center;margin-top:60px;}
 .sbtn{padding:5px 20px;color:#fff;background:#ff8328;border:none;font-size:14px;cursor:pointer;}

@@ -28,9 +28,10 @@
 .pl_pic{display:block;width:40px;height:40px;overflow:hidden;margin-right: 15px;}
 .pl_txt{display:block;width:500px;float:left;}
 .pl_txt span{display:block;}
-.n_com{color:#ff8339;margin-bottom: 10px;}
+.n_com{margin-bottom: 10px;}
+.n_com a{color:#ff8339;}
 .c_words{font-family:"microsoft yahei";color:#7b7b7b;font-size:12px;line-height:18px;}
-.pl_time{font-size:12px;}
+.pl_time{font-size:12px;color:#6c6c6c;}
 .paging{text-align:center;}
 .paging a{color:#6c6c6c;}
 
