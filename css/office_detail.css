@@ -26,7 +26,9 @@
 /*主体内容 照片*/
 .contact_item {padding-top:10px;padding-left: 32px;}
 .contact_item li{float:left;margin-right: 40px;width:227px;margin-bottom: 30px;}
-.contact_item li .person_picture{position:relative;height:160px;overflow:hidden;box-shadow: 3px 3px 5px #999;}
+.contact_item li .person_picture{position:relative;height:160px;box-shadow: 3px 3px 5px #999;}
+.contact_item li:hover .mask{display:block;}
+.contact_item li:hover .triangle{display:block;}
 .person_name{padding:5px 0px;}
 .person_name .p_name{width:60px;font-family:arial;}
 .person_name .adder_name{font-size:12px;float:right;}
@@ -34,8 +36,10 @@
 .person_describe span.de_tit{margin-right:10px;padding:5px;font-size:12px;background:#f2f2f2;display:block;float:left;}
 #title_three{margin-right:0px;}
 /*照片遮罩*/
-.mask{display:none;position:absolute;left:0;top:0;width:229px;height:160px;background:#333;opacity: 0.5;filter:alpha(opacity=50);color:#fff;font-size:12px;}
+.mask{display:none;position:absolute;left:0;top:-179px;width:229px;height:160px;background:#333;filter: alpha(opacity=50);opacity: 0.5;color:#fff;font-size:12px;}
 .mask.show{display:block;}
+.triangle{display:none;width:55px;height:28px;position:absolute;top:-26px;left:50%;margin-left:-30px;background:url(../images/icon.png) no-repeat 0px -456px;}
+.triangle.appear{display:block;}
 /*主体内容 照片*/
 .down_look_all{text-align: center;}
 .look_all .down_pic{display:block;margin:0 auto;width:20px;height:12px;background:url(../images/icon.png) no-repeat -96px -28px;}

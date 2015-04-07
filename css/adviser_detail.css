@@ -34,6 +34,7 @@
 .new_fr .ne_title .del{position:absolute;right:0;top:0px;color:#ff0000;font-size: 12px;}
 .intro_detail{text-indent:2em;font-size:14px;color:#6b6b6b; line-height: 22px;height:84px;overflow:hidden;}
 .b_f{display:block;float:left;line-height:35px;color:#cccccc;}
+.b_f a{color:#6c6c6c;}
 .b_f .f1{margin-left: 30px;}
 .b_f .f2{margin-left: 25px;}
 .b_f .gray_div{padding:5px 15px;background:#cccccc;color:#fff;}
