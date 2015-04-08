@@ -58,7 +58,7 @@
 .c_p1{height:30px;line-height:30px;overflow:hidden;font-size:12px;margin-bottom:5px;}
 .small_pic{display:block;width:30px;height:30px;overflow:hidden;}
 .small_pic img{width:30px;height:30px;} 
-.c_p2 span{padding:5px 7px;background:#f2f2f2;font-size: 12px;}
+.c_p2 span{display:block;float:left;padding:5px 7px;margin:0px 3px 5px;background:#f2f2f2;font-size: 12px;}
 
 
 /*工作室相关style*/
@@ -68,8 +68,7 @@
 .name_off{font-size: 16px;margin-bottom: 20px;}
 .name_off a{color:#6c6c6c;}
 .adviser_num{font-size:12px;margin-left:20px;}
-.right_column a{color:#6c6c6c;font-size:14px;color:#ff8328;display:block;height:100px;line-height:100px;text-align:center;}
-
+.right_column a{color:#6c6c6c;}
 
 /*观点相关style*/
 #new_idea_list{margin-top: 15px;}

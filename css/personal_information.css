@@ -94,3 +94,6 @@ i.bm_pic{overflow:hidden;width:40px;height:33px;display:block;float:left;}
 #person_pic{margin-bottom:20px;position:relative;min-height:110px;max-height:500px;overflow: hidden;background:url(../images/ban_bg.png) no-repeat 50% 50%;}
 /* #person_pic img{position:absolute;z-index:1;} */
 .b_g_link{display:block;position:absolute;z-index:0;width:134px;height:30px;top:50%;left:50%;margin-top:-30px;margin-left:-68px;}
+
+
+.ne_title a{color:#6c6c6c;}

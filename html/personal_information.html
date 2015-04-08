@@ -8,6 +8,13 @@
   <script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
   <script type="text/javascript" src="../js/jquery.scrollto.js"></script>
   <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="http://player.youku.com/jsapi">
+    player = new YKU.Player('youkuplayer',{
+    styleid: '0',
+    client_id: '8fa0c4541085889f',
+    vid: 'XOTA4NTM4OTY4'
+      });
+  </script>
   <script type="text/javascript">
      $(document).ready(function(){
            $('.or_div').each(function (index){
@@ -66,11 +73,6 @@
                      $('##next_above span').css({'margin-right':'32px'})
                  });
               });
-
-           //判定banner图有时，背景a标签链接不显示
-           /*var picHeight = $('#person_pic img').height();
-           console.log(picHeight);
-           $('#person_pic').css({'height':picHeight});*/
      });
        
   
@@ -97,7 +99,7 @@
           <li><a href="">定制服务</a></li>
           <li><a href="">顾问/工作室</a></li>
           <li><a href="">观点视角</a></li>
-          <li style="padding-right:0;"><a href="">产品投资</a></li>
+          <li><a href="">产品投资</a></li>
           <div class="clear"></div>
         </ul> 
       </div>
@@ -126,18 +128,18 @@
                 简介
             </span>
         </a>
-        <a href="#" id="md_02">
-            <span class="or_div">
-                <span class="icon_picture pic_02"></span>
-                <i class="lit_p"></i>
-                观点
-            </span>
-        </a>
         <a href="#" id="md_03">
           <span class="or_div">
             <span class="icon_picture pic_03"></span>
             <i class="lit_p"></i>
             推荐
+            </span>
+        </a>
+        <a href="#" id="md_02">
+            <span class="or_div">
+                <span class="icon_picture pic_02"></span>
+                <i class="lit_p"></i>
+                观点
             </span>
         </a>
         </div>
@@ -148,7 +150,8 @@
               <div class="complete"><a href="javascript:void(0);">完善资料</a></div>
           </div>
           <div id="person_pic">
-                <img src="../images/detail_01.png" alt="" />
+                <!-- <img src="../images/detail_01.png" alt="" /> -->
+                <div id="youkuplayer" style="width:880px;height:500px"></div>
                 <a href="javascript:void(0);" class="b_g_link"></a>
           </div>
           <div class="area01">
@@ -235,7 +238,6 @@
                   <form action="">
                       <div class="typing">
                           <img src="../" alt="" />
-                          <!-- <input type="text" /> -->
                       </div>
                       <div class="typing_sure clearfix">
                           <div class="vw_left f_left clearfix">
@@ -254,10 +256,13 @@
               <div id="new_idea_list">
                 <div class="new_item fore1 clearfix">
                     <div class="new_fl f_left">
-                        <img src="../images/detail_02.png" alt="" />
+                        <a href="javascript:void(0);"><img src="../images/detail_02.png" alt="" /></a>
                     </div>
                     <div class="new_fr f_left">
-                  <div class="ne_title">投资市场最新行情探讨<a href="javascript:void(0)"><span class="del">删除</span></a></div>
+                  <div class="ne_title">
+                      <a href="javascript:void(0);">投资市场最新行情探讨</a>
+                      <a href="javascript:void(0)"><span class="del">删除</span></a>
+                  </div>
                   <p class="intro_detail">业务能力和竞争力稳居龙头地位。中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平</p>
                   <div class="new_fr_bott clearfix">
                     <i class="bm_pic">
@@ -276,10 +281,13 @@
                 </div>
                 <div class="new_item fore1 clearfix">
                     <div class="new_fl f_left">
-                      <img src="../images/detail_02.png" alt="" />
+                      <a href="javascript:void(0);"><img src="../images/detail_02.png" alt="" /></a>
                     </div>
                     <div class="new_fr f_left">
-                      <div class="ne_title">投资市场最新行情探讨<a href="javascript:void(0)"><span class="del">删除</span></a></div>
+                      <div class="ne_title">
+                          <a href="javascript:void(0);">投资市场最新行情探讨</a>
+                          <a href="javascript:void(0);"><span class="del">删除</span></a>
+                      </div>
                       <p class="intro_detail">业务能力和竞争力稳居龙头地位。中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平</p>
                       <div class="new_fr_bott clearfix">
                         <i class="bm_pic">
@@ -298,10 +306,13 @@
                 </div>
                 <div class="new_item fore1 clearfix">
                     <div class="new_fl f_left">
-                      <img src="../images/detail_02.png" alt="" />
+                      <a href="javascript:void(0);"><img src="../images/detail_02.png" alt="" /></a>
                     </div>
                     <div class="new_fr f_left">
-                      <div class="ne_title">投资市场最新行情探讨<a href="javascript:void(0)"><span class="del">删除</span></a></div>
+                      <div class="ne_title">
+                          <a href="javascript:void(0);">投资市场最新行情探讨</a>
+                          <a href="javascript:void(0)"><span class="del">删除</span></a>
+                      </div>
                       <p class="intro_detail">业务能力和竞争力稳居龙头地位。中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平中信的传统和创新业务都居行业领先水平</p>
                       <div class="new_fr_bott clearfix">
                         <i class="bm_pic">
